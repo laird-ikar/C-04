@@ -6,7 +6,7 @@
 /*   By: bguyot <bguyot@student.42mulhouse.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/11 16:42:55 by bguyot            #+#    #+#             */
-/*   Updated: 2021/11/18 13:36:10 by bguyot           ###   ########.fr       */
+/*   Updated: 2021/11/18 17:39:07 by bguyot           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@ void	ft_putnbr(int nb)
 		write(1, "-", 1);
 		nb *= -1;
 	}
-	if (nb == 0)
+	else if (nb == 0)
 		write(1, "0", 1);
 	else
 	{
