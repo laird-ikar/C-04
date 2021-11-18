@@ -6,7 +6,7 @@
 /*   By: bguyot <bguyot@student.42mulhouse.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/16 07:21:36 by bguyot            #+#    #+#             */
-/*   Updated: 2021/11/16 15:35:11 by bguyot           ###   ########.fr       */
+/*   Updated: 2021/11/18 13:29:12 by bguyot           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,12 +19,14 @@ void	ft_putnbr_base(int nbr, char *base)
 {
 	int	base_size;
 
+	base_size = is_valid(base);
 	if (nbr < 0)
 	{
 		write(1, "-", 1);
+		ft_putnbr_base(nbr / base_size * -1, base);
+		write(1, &base[-(nbr % base_size)], 1);
 		nbr *= -1;
 	}
-	base_size = is_valid(base);
 	if (base_size)
 	{
 		if (nbr >= base_size)
