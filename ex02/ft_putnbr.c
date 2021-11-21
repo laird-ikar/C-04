@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: bguyot <bguyot@student.42mulhouse.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/11/11 16:42:55 by bguyot            #+#    #+#             */
-/*   Updated: 2021/11/19 14:04:19 by bguyot           ###   ########.fr       */
+/*   Created: 2021/11/21 14:17:01 by bguyot            #+#    #+#             */
+/*   Updated: 2021/11/21 14:18:40 by bguyot           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,6 @@ void	ft_putchar(char c);
 
 void	ft_putnbr(int nb)
 {
-
 	if (nb < 0)
 	{
 		write(1, "-", 1);
