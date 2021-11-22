@@ -6,7 +6,7 @@
 /*   By: bguyot <bguyot@student.42mulhouse.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/16 07:21:36 by bguyot            #+#    #+#             */
-/*   Updated: 2021/11/19 15:23:28 by bguyot           ###   ########.fr       */
+/*   Updated: 2021/11/22 07:08:48 by bguyot           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,7 +37,7 @@ void	ft_putnbr_base(int nbr, char *base)
 }
 
 int	is_valid(char *base)
-{	
+{
 	int	size;
 	int	j;
 

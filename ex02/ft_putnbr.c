@@ -6,7 +6,7 @@
 /*   By: bguyot <bguyot@student.42mulhouse.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/21 14:17:01 by bguyot            #+#    #+#             */
-/*   Updated: 2021/11/21 14:18:40 by bguyot           ###   ########.fr       */
+/*   Updated: 2021/11/21 14:50:46 by bguyot           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,7 @@ void	ft_putnbr(int nb)
 		ft_putchar(nb % 10 + '0');
 }
 
-void	fr_putchar(char c)
+void	ft_putchar(char c)
 {
 	write(1, &c, 1);
 }
